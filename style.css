@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --Blue: hsl(223, 87%, 63%);
+    
+    /* ### Secondary */
+    
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    
+    /* ### Neutral */
+    
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+/* MAIN THINGS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.mainBox {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1rem;
+}
+
+/* UPPER PART */
+
+.logo {
+    margin-bottom: 2rem;
+    transform: scale(80%);
+}
+
+.soon {
+    color: var(--Gray);
+    margin-bottom: 1rem;
+    font-size: 27px;
+}
+
+.soon .soonT {
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+
+.subscribe {
+    font-size: 14px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* INPUT PART AND BUTTON */
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.emailInput {
+    color: var(--Blue);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--Pale-Blue);
+    height: 2.5rem;
+    border-radius: 50px;
+    padding-left: 2rem;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.emailInput::placeholder {
+    color: var(--Pale-Blue);
+    font-weight: 300;
+}
+
+.errorMessage {
+    display: none;
+    color: var(--Light-Red);
+    font-size: 12px;
+    text-align: center;
+}
+
+.errorMessage.active {
+    display: block;
+}
+
+.notifyButton {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: var(--Blue);
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--Pale-Blue);
+    height: 2.5rem;
+    border-radius: 50px;
+}
+
+/* GRAPHS */
+
+.graphs {
+    max-width: 375px;
+}
+
+.graphs img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+.social {
+    color: var(--Blue);
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.social ul {
+    /* list-style-type: none; */
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-bottom: 1rem;
+}
+
+.social svg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 7px;
+    top: 7px;
+}
+
+/* .social ul li {
+    display: inline;
+} */
+
+.social ul .fb {
+    /* background-image: url("./images/facebook-f-brands.svg");
+    background-repeat: no-repeat; */
+    border: 1px solid hsl(0, 0%, 89%);
+    /* background-size: 40%;
+    background-position: center; */
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.social ul .tw {
+    /* background-image: url("./images/twitter-brands.svg"); */
+    background-repeat: no-repeat;
+    border: 1px solid hsl(0, 0%, 89%);
+    /* background-size: 40%;
+    background-position: center; */
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.social ul .inst {
+    /* background-image: url("./images/instagram-brands.svg"); */
+    background-repeat: no-repeat;
+    border: 1px solid hsl(0, 0%, 89%);
+    /* background-size: 40%;
+    background-position: center; */
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--Gray);
+    font-size: 12px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
